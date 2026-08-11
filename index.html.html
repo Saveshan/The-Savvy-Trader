@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Savvy Trader— Weekly Customs, Ports &amp; Trade Briefing</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #EFECE4;
+    color: #2E2C27;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #FCFBF7;
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.08);
+  }
+  .masthead {
+    padding: 34px 28px 18px;
+    text-align: center;
+    border-bottom: 4px double #2E2C27;
+  }
+  .masthead .kicker {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    color: #8C4A34;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .masthead h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 56px;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .masthead .tagline {
+    font-style: italic;
+    color: #6B6A63;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 28px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6B6A63;
+    border-bottom: 1px solid #2E2C27;
+  }
+  .lead {
+    padding: 26px 28px 20px;
+    border-bottom: 1px solid #E1E1DF;
+  }
+  .lead .section-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #8C4A34;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .lead h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+  }
+  .lead h2 a { color: #2E2C27; text-decoration: none; }
+  .lead h2 a:hover { text-decoration: underline; }
+  .lead p {
+    font-size: 16px;
+    line-height: 1.55;
+    color: #4A4842;
+    margin: 0 0 10px;
+    max-width: 640px;
+  }
+  .source-line {
+    font-size: 12px;
+    color: #6B6A63;
+  }
+  .source-line a {
+    color: #8C4A34;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .source-line a:hover { text-decoration: underline; }
+  .sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .section {
+    padding: 22px 28px;
+    border-bottom: 1px solid #E1E1DF;
+  }
+  .section:nth-child(odd) { border-right: 1px solid #E1E1DF; }
+  .section h3 {
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2E2C27;
+    border-bottom: 2px solid #2E2C27;
+    padding-bottom: 8px;
+    margin: 0 0 14px;
+  }
+  article { margin-bottom: 16px; }
+  article:last-child { margin-bottom: 0; }
+  article h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 0 0 5px;
+    font-weight: 700;
+  }
+  article h4 a { color: #2E2C27; text-decoration: none; }
+  article h4 a:hover { text-decoration: underline; }
+  article p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #4A4842;
+    margin: 0 0 5px;
+  }
+  article .source-line { font-size: 11.5px; }
+  .full-width {
+    grid-column: 1 / -1;
+    border-right: none !important;
+  }
+  .divider-note {
+    grid-column: 1 / -1;
+    padding: 4px 28px;
+    font-size: 11px;
+    color: #B4B3A8;
+    text-align: center;
+    font-style: italic;
+  }
+  .footer {
+    padding: 22px 28px 32px;
+    text-align: center;
+    font-size: 12px;
+    color: #6B6A63;
+    border-top: 4px double #2E2C27;
+  }
+  .footer .byline {
+    font-weight: 600;
+    color: #2E2C27;
+    margin-bottom: 4px;
+  }
+  @media (max-width: 640px) {
+    .masthead h1 { font-size: 38px; }
+    .masthead { padding: 24px 18px 14px; }
+    .meta-row { flex-direction: column; gap: 4px; padding: 10px 18px; }
+    .lead { padding: 20px 18px 16px; }
+    .lead h2 { font-size: 24px; }
+    .sections { grid-template-columns: 1fr; }
+    .section:nth-child(odd) { border-right: none; }
+    .section { padding: 18px 18px; }
+    .footer { padding: 18px 18px 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="masthead">
+    <div class="kicker">South Africa · Clearing &amp; Forwarding</div>
+    <h1>The Savvy Trader</h1>
+    <div class="tagline">Customs, ports &amp; trade — the week's essentials for South Africa's freight community</div>
+  </div>
+
+  <div class="meta-row">
+    <span>Vol. 1 · No. 1</span>
+    <span>Week of Tuesday, August 11, 2026</span>
+    <span>Weekly Edition</span>
+  </div>
+
+  <div class="lead">
+    <div class="section-label">Lead Story</div>
+    <h2><a href="https://capitalethiopia.com/2026/08/10/africa-faces-trade-crossroads-as-agoa-expiry-nears/" target="_blank" rel="noopener">AGOA's Clock Is Ticking for African Exporters</a></h2>
+    <p>Africa's exporters and policymakers are bracing for a trade crossroads: the short-term extension of the African Growth and Opportunity Act runs out on 31 December 2026. With Washington's next move uncertain, South Africa is leaning harder on AfCFTA and new bilateral deals to keep market access open.</p>
+    <div class="source-line">Capital Newspaper · Aug 10, 2026 · <a href="https://capitalethiopia.com/2026/08/10/africa-faces-trade-crossroads-as-agoa-expiry-nears/" target="_blank" rel="noopener">Read the full story →</a></div>
+  </div>
+
+  <div class="sections">
+
+    <div class="section">
+      <h3>Trade &amp; Policy</h3>
+      <article>
+        <h4><a href="https://www.yahoo.com/news/south-africa-eu-summit-centers-103055937.html" target="_blank" rel="noopener">EU Pledges $5.1bn, Opens Trade Talks with Pretoria</a></h4>
+        <p>Brussels commits to green energy and vaccine investment at the SA-EU summit and agrees to start talks on a new trade deal — SA remains the EU's largest trading partner in sub-Saharan Africa.</p>
+        <div class="source-line">Yahoo News · <a href="https://www.yahoo.com/news/south-africa-eu-summit-centers-103055937.html" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.ecofinagency.com/news/0802-52683-south-africa-deepens-economic-ties-with-china-amid-u-s-tariff-dispute" target="_blank" rel="noopener">SA and China Sign Duty-Free Trade Pact</a></h4>
+        <p>Trade Minister Parks Tau's new cooperation agreement gives South African exports duty-free access to the Chinese market as Pretoria hedges against US tariff pressure.</p>
+        <div class="source-line">Ecofin Agency · <a href="https://www.ecofinagency.com/news/0802-52683-south-africa-deepens-economic-ties-with-china-amid-u-s-tariff-dispute" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.africanews.com/2026/05/01/china-drops-tariffs-on-all-african-nations-except-eswatini/" target="_blank" rel="noopener">China Zeroes Out Tariffs for Nearly All of Africa</a></h4>
+        <p>Beijing has dropped tariffs for 53 of 54 African nations with diplomatic ties, a boost for SA citrus and wine exporters who previously faced duties of up to 30%.</p>
+        <div class="source-line">Africanews · <a href="https://www.africanews.com/2026/05/01/china-drops-tariffs-on-all-african-nations-except-eswatini/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://cbn.co.za/industry-news/power-transmission-motors-drives-news/african-continental-free-trade-area-drives-r2-6-billion-in-south-africa-trade/" target="_blank" rel="noopener">AfCFTA Trade Tops R2.6bn as SA Scales Up</a></h4>
+        <p>South Africa's Guided Trade Initiative shipments have moved past the pilot phase into regularised preferential trade under AfCFTA rules.</p>
+        <div class="source-line">CBN Industry News · <a href="https://cbn.co.za/industry-news/power-transmission-motors-drives-news/african-continental-free-trade-area-drives-r2-6-billion-in-south-africa-trade/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Ports &amp; Shipping</h3>
+      <article>
+        <h4><a href="https://news.yrules.com/en/archives/4011" target="_blank" rel="noopener">79 Ships Queue as Durban, Ngqura Congestion Bites</a></h4>
+        <p>Durban waiting times have climbed to roughly four days and Ngqura to about five, while Cape Town is rated South Africa's worst-performing container terminal.</p>
+        <div class="source-line"><a href="https://news.yrules.com/en/archives/4011" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.dhl.com/discover/en-za/ship-with-dhl/services/all-eyes-on-durban---cape-town--the-big-port-reset-of-2026-" target="_blank" rel="noopener">Transnet Sets TEU Record Despite Rail Bottlenecks</a></h4>
+        <p>Transnet Port Terminals moved over 100,000 TEUs in a single week — even as rail arrivals and trucking capacity continue to lag terminal processing speed.</p>
+        <div class="source-line">DHL Discover · <a href="https://www.dhl.com/discover/en-za/ship-with-dhl/services/all-eyes-on-durban---cape-town--the-big-port-reset-of-2026-" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.maersk.com/news/articles/2026/07/20/port-dues-reduction-south-africa-maersk-august" target="_blank" rel="noopener">Maersk Cuts Port Dues from 1 August</a></h4>
+        <p>Reduced Port Additional and Port Dues charges now apply to all containers discharging in South Africa from the start of the month.</p>
+        <div class="source-line">Maersk · <a href="https://www.maersk.com/news/articles/2026/07/20/port-dues-reduction-south-africa-maersk-august" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.freightnews.co.za/article/new-shipping-surcharges-raise-cost-concerns" target="_blank" rel="noopener">Peak-Season Surcharges Push Rates Higher</a></h4>
+        <p>Maersk and CMA CGM peak-season surcharges have landed as China–SA container rates climbed 12–25% through July.</p>
+        <div class="source-line">Freight News · <a href="https://www.freightnews.co.za/article/new-shipping-surcharges-raise-cost-concerns" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Customs Desk — SARS</h3>
+      <article>
+        <h4><a href="https://www.sars.gov.za/legal-counsel/secondary-legislation/tariff-amendments/tariff-amendments-2026/" target="_blank" rel="noopener">SARS Publishes 2026 Tariff Amendments</a></h4>
+        <p>Notices R7018 and R7019, gazetted under Government Gazette 53984, update customs duty rates and classifications across several tariff schedules.</p>
+        <div class="source-line">SARS · <a href="https://www.sars.gov.za/legal-counsel/secondary-legislation/tariff-amendments/tariff-amendments-2026/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.sars.gov.za/customs-and-excise/registration-licensing-and-accreditation/rla/" target="_blank" rel="noopener">Cape Town Container Depot Gets New Facility Code</a></h4>
+        <p>SARS updated Box 30 facility codes on 29 July to include the container depot details for United Container Depots (Pty) Ltd in Cape Town.</p>
+        <div class="source-line">SARS RLA Updates · <a href="https://www.sars.gov.za/customs-and-excise/registration-licensing-and-accreditation/rla/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.freightnews.co.za/article/customs-registration-licensing-and-accreditation-rla-4" target="_blank" rel="noopener">New RLA Rule Caps Private Importer Code at R150,000/Year</a></h4>
+        <p>SARS' SC-CF-19 policy, effective 11 May, tightens how private individuals may use the general Customs Code 70707070.</p>
+        <div class="source-line">Freight News · <a href="https://www.freightnews.co.za/article/customs-registration-licensing-and-accreditation-rla-4" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://businessreport.co.za/economy/2026-08-02-itac-backs-20-peanut-butter-import-duty-to-support-local-manufacturers/" target="_blank" rel="noopener">ITAC Raises Peanut Butter Duty to 20%</a></h4>
+        <p>The general rate of duty jumped from 0.99c/kg to 20% ad valorem from 24 July — a reminder of how fast tariff protections can shift on a single product line.</p>
+        <div class="source-line">Business Report · <a href="https://businessreport.co.za/economy/2026-08-02-itac-backs-20-peanut-butter-import-duty-to-support-local-manufacturers/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+    </div>
+
+    <div class="section">
+      <h3>Air Cargo</h3>
+      <article>
+        <h4><a href="https://www.engineeringnews.co.za/article/cargo-and-fuel-projects-feature-strongly-in-r20bn-ortia-investment-plan-2026-07-17" target="_blank" rel="noopener">OR Tambo's R20bn Midfield Cargo Complex Advances</a></h4>
+        <p>The new terminal targets 750,000 tonnes of annual cargo capacity between the airport's runways, with construction expected to start around mid-2027.</p>
+        <div class="source-line">Engineering News · <a href="https://www.engineeringnews.co.za/article/cargo-and-fuel-projects-feature-strongly-in-r20bn-ortia-investment-plan-2026-07-17" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://dailyinvestor.com/south-africa/130700/major-changes-on-the-cards-for-or-tambo-cape-town-and-king-shaka-international-airports/" target="_blank" rel="noopener">Cape Town Airport's R10bn Upgrade Adds Cargo Capacity</a></h4>
+        <p>Runway realignment and expanded international apron stands are part of ACSA's wider expansion, alongside increased cargo handling capability.</p>
+        <div class="source-line">Daily Investor · <a href="https://dailyinvestor.com/south-africa/130700/major-changes-on-the-cards-for-or-tambo-cape-town-and-king-shaka-international-airports/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.aircargonews.net/insights/2026/04/air-cargo-stakeholders-back-africa/" target="_blank" rel="noopener">African Air Cargo Demand Outrunning Capacity</a></h4>
+        <p>IATA data shows African air cargo demand up 18.2% year-on-year into 2026, with capacity growth of 6.5% struggling to keep pace.</p>
+        <div class="source-line">Air Cargo News · <a href="https://www.aircargonews.net/insights/2026/04/air-cargo-stakeholders-back-africa/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+    </div>
+
+    <div class="section full-width">
+      <h3>Business Pulse</h3>
+      <article>
+        <h4><a href="https://www.citizen.co.za/motoring/petrol-down-diesel-spikes-august-heres-what-youll-pay/" target="_blank" rel="noopener">Diesel Jumps Over R1.20 a Litre as Petrol Dips</a></h4>
+        <p>Brent crude's spike following the collapse of the US-Iran ceasefire pushed diesel sharply higher from 5 August even as petrol eased — a cost swing worth flagging for anyone quoting inland transport.</p>
+        <div class="source-line">The Citizen · <a href="https://www.citizen.co.za/motoring/petrol-down-diesel-spikes-august-heres-what-youll-pay/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+      <article>
+        <h4><a href="https://www.riotimesonline.com/south-african-rand-brent-below-80-august-2026/" target="_blank" rel="noopener">Rand Firms Near a Month-High as Gold Rallies</a></h4>
+        <p>The rand traded around R16.33 to the dollar in early August, near its strongest level in a month, as gold prices climbed — some relief on the import-cost side of the ledger.</p>
+        <div class="source-line"><a href="https://www.riotimesonline.com/south-african-rand-brent-below-80-august-2026/" target="_blank" rel="noopener">Read full story →</a></div>
+      </article>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="byline">Curated by Savi Govender</div>
+    Every headline links to its original source — click through for the full story.<br>
+    The Savvy Trader is an independent weekly roundup for South Africa's clearing, forwarding &amp; trade community.
+  </div>
+
+</div>
+</body>
+</html>
